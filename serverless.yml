@@ -37,9 +37,9 @@ provider:
   
 
 functions:
-  create:
-    handler: create.main
+  get:
+    handler: get.main
     events:
       - http:
-          path: notes
-          method: post
+          path: notes/{id}
+          method: get

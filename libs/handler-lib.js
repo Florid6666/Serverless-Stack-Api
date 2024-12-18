@@ -9,10 +9,10 @@ export default function handler(lambda) {
     body = { error: e.message };
     statusCode = 500;
     }
-// Return HTTP response
-return {
+ // Return HTTP response
+ return {
     statusCode,
     body: JSON.stringify(body),
     };
     };
-    }    
+}    
